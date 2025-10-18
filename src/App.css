@@ -399,13 +399,16 @@ gap: 10px;
 
 
 @media screen and (min-width: 375px) and (max-width: 768px) {
-  
+  .searchsec{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
   
 }
 
 
 
-@media screen and (min-width: 769px) and (max-width: 1024px) {
+/* @media screen and (min-width: 769px) and (max-width: 1024px) {
   .forecast {
     grid-template-columns: repeat(4, 1fr);
   }
@@ -414,4 +417,4 @@ gap: 10px;
     display: flex;
     justify-content: space-around;
   }
-}
+} */
