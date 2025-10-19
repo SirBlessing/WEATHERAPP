@@ -1,7 +1,7 @@
 .app {
   background-color: #0a0a2a;
   color: #fff;
-  min-height: 100vh;
+  /* min-height: 100vh; */
   font-family: "DM Sans", sans-serif;
    font-size: 18px
 
@@ -399,10 +399,254 @@ gap: 10px;
 
 
 @media screen and (min-width: 375px) and (max-width: 768px) {
-  .searchsec{
-    display: grid;
-    grid-template-columns: 1fr;
-  }
+ .app {
+ 
+ 
+  min-height: 100vh;
+ min-width: 375px;
+   font-size: 18px
+
+}
+
+.title {
+  text-align: center;
+  font-size: 1.8rem;
+  margin: 1rem 0;
+}
+  .headersec{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 35px;
+  
+}
+.headersec h1{
+  font-size: 45px;
+  text-align: center;
+}
+
+
+
+/* Navbar.css */
+
+.navbar {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* padding: 1rem 2rem; */
+ 
+  position: relative;
+  width: 375px;
+  height: 46px;
+}
+
+.logo {
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.settings{
+  background-color: #262540;
+  width: 100px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+}
+
+.settings-btn {
+  background: transparent;
+  border: none;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+  height: 10px;
+}
+
+.settings-btn:hover {
+  opacity: 0.8;
+}
+
+.dropdown {
+  position: absolute;
+  right: 2rem;
+  top: 3.5rem;
+  background: #1a1a4f;
+  border-radius: 10px;
+  padding: 1rem;
+  min-width: 200px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  z-index: 10;
+}
+
+
+/* DropdownMenu.css */
+
+.dropdown-section {
+  margin-bottom: 1rem;
+}
+
+.dropdown-section h4 {
+  font-size: 0.9rem;
+  color: #aaa;
+  margin-bottom: 0.3rem;
+}
+
+.dropdown-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.dropdown-section li {
+  padding: 0.3rem;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.dropdown-section li:hover,
+.dropdown-section li.active {
+  background: #29297a;
+}
+
+
+/* WeatherCard.css */
+
+.weather-card {
+   display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+ width: 400px;
+  height: 286px;
+padding: 0;
+ margin: 0;
+  
+
+}
+
+.location h2 {
+  margin: 30px;
+}
+.location p{
+  opacity: 70%;
+}
+.temp-display {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  
+  font-size: 2.5rem;
+  margin:0;
+}
+.temp{
+  padding-left: 15%;
+}
+.stats {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  font-size: 0.9rem;
+}
+.forecast {
+ 
+  
+  padding: 1.5rem;
+  width: 250px;
+  height: 655px;
+ 
+ 
+}
+.forcastdaysec{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 10px;
+}
+.forcastdaysec select{
+  color: white;
+  background-color: #3C3B5E;
+  border-radius: 5px;
+  height: 25px;
+  width: 130px;
+  border: none;
+ 
+}
+.forcastdaysec h3{
+   font-size: 0.5rem;
+   font-weight: lighter;
+}
+.forecast h3 {
+  /* margin-bottom: 1rem; */
+  font-size: 0.9rem;
+  
+}
+
+.forecast ul {
+  list-style: none;
+  padding: 0;
+}
+
+.forecast li {
+  display: flex;
+  justify-content: space-between;
+  padding: 5%;
+  
+  background-color: #302F4A;
+border-radius: 12px;
+margin-bottom: 5%;
+}
+/* .forecast span{
+  padding-left: 0.2%;
+} */
+.spantest{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+gap: 10px;
+}
+.searchsec{
+  display: grid;
+  grid-template-columns: 1fr;
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin: 20px 0;
+    margin-bottom: 4%; */
+    margin: 20px 0;
+    padding: 10px;
+}
+.searchsec input{
+    padding: 10px;
+    margin: auto;
+    width: 343px;
+    height: 30px;
+  
+}
+
+.searchsec button{
+    padding:  10px;
+    
+    border: none;
+   margin: auto;
+   margin-top: 5px;
+    width: 350px;
+    height: 50px;
+   
+}
+.mainweathersec{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  
+ 
+}
   
 }
 
