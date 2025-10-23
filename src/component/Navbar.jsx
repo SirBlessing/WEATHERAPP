@@ -38,14 +38,25 @@ function Navbar({ unit, onUnitChange }) {
       </div>
 
       <div className="settings">
-        <button className="settings-btn" onClick={() => setOpen(!open)}>
+        <button className="settings-btn"  onClick={() => setOpen((s) => !s)}
+          aria-expanded={open}
+          aria-haspopup="true"
+        >
           <FiSettings size={13}  />
          
           <span>Units</span>
           <FiChevronDown/>
         </button>
 
-        {open && <DropdownMenu unit={unit} onUnitChange={onUnitChange} />}
+       {open && (
+          <DropdownMenu
+            unit={unit}
+            onUnitChange={(k, v) => {
+              onUnitChange(k, v);
+              setOpen(false);
+            }}
+          />
+        )}
         
       </div>
       

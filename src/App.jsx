@@ -1,7 +1,7 @@
-import { useState } from 'react'
-import Home from './pages/Home'
-import './App.css'
-import Navbar from './component/Navbar'
+import { useState } from 'react';
+import Home from './pages/Home';
+import './App.css';
+import Navbar from './component/Navbar';
 // import WeatherCard from './component/WeatherCard';
 // import Forecast from './component/Forecast';
 function App() {
